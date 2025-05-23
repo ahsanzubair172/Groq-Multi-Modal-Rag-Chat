@@ -50,7 +50,7 @@ Groq Chat Application
 
 ### 🔧 Installation
 1. Clone the repository
-git clone https://github.com/your-username/groq-multi-modal-chat.git
+git clone https://github.com/ahsanzubair172/groq-multi-modal-chat.git
 cd groq-multi-modal-chat
 2. Install dependencies
 pip install -r requirements.txt
