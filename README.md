@@ -19,30 +19,25 @@
 
 * * *
 ---
-## 🏗️ Architecture Overview
-
-Groq Chat Application
-│
-├── Core Components
-│   ├── LLM (Groq API)
-│   ├── Embedding Model (HuggingFace)
-│   ├── Document Loaders (PyMuPDF, PyPDF2)
-│   ├── Indexes (VectorStore, Tree, KeywordTable)
-│   └── Memory Buffer (ChatMemoryBuffer)
-│
-├── Implementations
-│   ├── Basic Text Chat (groqchat.py)
-│   ├── Document-Aware Chat (mupdf.py, pypdf.py, rag.py)
-│   ├── FastAPI Integration (pbfast.py, ragchat.py)
-│   ├── Streamlit Interface (pcst2.py)
-│   └── Advanced Architectures (graph.py, graph2.py)
-│
-└── Utilities
-├── Node Parsers
-├── Text Splitters
-└── Configuration Management
 
 
+Groq Chat Application  
+├── Core Components  
+│   ├── LLM (Groq API)  
+│   ├── Embedding Model (HuggingFace)  
+│   ├── Document Loaders (PyMuPDF, PyPDF2)  
+│   ├── Indexes (VectorStore, Tree, KeywordTable)  
+│   └── Memory Buffer (ChatMemoryBuffer)  
+├── Implementations  
+│   ├── Basic Text Chat (groqchat.py)  
+│   ├── Document-Aware Chat (mupdf.py, pypdf.py, rag.py)  
+│   ├── FastAPI Integration (pbfast.py, ragchat.py)  
+│   ├── Streamlit Interface (pcst2.py)  
+│   └── Advanced Architectures (graph.py, graph2.py)  
+└── Utilities  
+    ├── Node Parsers  
+    ├── Text Splitters  
+    └── Configuration Management 
 
 
 ## 🎮 Getting Started
@@ -123,12 +118,17 @@ uvicorn pbfast:app --reload --host 0.0.0.0 --port 4000
 
 2. Send POST requests to `http://localhost:4000/ask` with a JSON body containing your query.
 
+
+
 Example JSON body:
 
 json
 {
   "query": "What is the purpose of this application?"
 }
+
+
+
 Streamlit Interface
 bash
 streamlit run pcst2.py
@@ -139,11 +139,13 @@ Upload PDF documents for document-aware Q&A
 Navigate via: Home, Chat, Documents, Chat History
 
 🧪 Developer Notes
-Document loading via PyMuPDF, PyPDF2
+Document loading via PyMuPDF, PyPDF2... 
 
 Text chunking for indexing
 
 VectorStore indexing
+Tree Index 
+....
 
 Conversational memory with token limits
 
@@ -155,19 +157,21 @@ Cross-platform compatibility
 
 🩺 Troubleshooting
 Issue	Solution
-❌ Invalid API key	Check and update API.py
-❌ Documents not loading	Ensure file paths are correct
-❌ No response from bot	Verify API key, rate limits, internet
-❌ App not starting	Check dependency installation
+-❌ Invalid API key	Check and update API.py
+-❌ Documents not loading	Ensure file paths are correct
+-❌ No response from bot	Verify API key, rate limits, internet
+-❌ App not starting	Check dependency installation
 
-📜 License
+---
+
+# 📜 License
 MIT License — See LICENSE for full details.
 
-🔒 Disclaimer
+# 🔒 Disclaimer
 This project is for educational and personal use only.
 Please respect the terms of service of the API providers.
 
-🙌 Acknowledgements
+# 🙌 Acknowledgements
 Groq API
 
 Llama Index
@@ -184,4 +188,4 @@ Streamlit
 
 HuggingFace Embeddings
 
-Crafted by MYSELF
+# Crafted by MYSELF
