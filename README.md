@@ -6,150 +6,131 @@
 
 > A **versatile, intelligent conversational AI application** — powered by Groq API — supporting text-based conversations, document interactions, memory functionality for context management, and multiple implementation architectures.
 
----
+* * *
 
 ## ✨ Key Features
 
-- ✅ Text-based conversational AI with context awareness  
-- ✅ Document processing and question answering capabilities  
-- ✅ Memory functionality to maintain conversation context  
-- ✅ Support for multiple document formats including PDF  
-- ✅ FastAPI integration for building scalable chatbot APIs  
-- ✅ Streamlit interface for interactive document-based conversations  
+- ✅ Text-based conversational AI with context awareness
+- ✅ Document processing and question answering capabilities
+- ✅ Memory functionality to maintain conversation context
+- ✅ Support for multiple document formats including PDF
+- ✅ FastAPI integration for building scalable chatbot APIs
+- ✅ Streamlit interface for interactive document-based conversations
 
+* * *
 ---
-
 ## 🏗️ Architecture Overview
 
 Groq Chat Application
 │
 ├── Core Components
-│ ├── LLM (Groq API)
-│ ├── Embedding Model (HuggingFace)
-│ ├── Document Loaders (PyMuPDF, PyPDF2)
-│ ├── Indexes (VectorStore, Tree, KeywordTable)
-│ └── Memory Buffer (ChatMemoryBuffer)
+│   ├── LLM (Groq API)
+│   ├── Embedding Model (HuggingFace)
+│   ├── Document Loaders (PyMuPDF, PyPDF2)
+│   ├── Indexes (VectorStore, Tree, KeywordTable)
+│   └── Memory Buffer (ChatMemoryBuffer)
 │
 ├── Implementations
-│ ├── Basic Text Chat (groqchat.py)
-│ ├── Document-Aware Chat (mupdf.py, pypdf.py, rag.py)
-│ ├── FastAPI Integration (pbfast.py, ragchat.py)
-│ ├── Streamlit Interface (pcst2.py)
-│ └── Advanced Architectures (graph.py, graph2.py)
+│   ├── Basic Text Chat (groqchat.py)
+│   ├── Document-Aware Chat (mupdf.py, pypdf.py, rag.py)
+│   ├── FastAPI Integration (pbfast.py, ragchat.py)
+│   ├── Streamlit Interface (pcst2.py)
+│   └── Advanced Architectures (graph.py, graph2.py)
 │
 └── Utilities
 ├── Node Parsers
 ├── Text Splitters
 └── Configuration Management
 
-yaml
-Copy
-Edit
 
----
+* * *
 
 ## 🎮 Getting Started
 
 ### 📦 Requirements
 
-- Python 3.8+  
-- Groq API key  
-- Various Python packages (listed in `requirements.txt`)  
+- Python 3.8+
+- Groq API key
+- Various Python packages (listed in `requirements.txt`)
 
 ### 🔧 Installation
-
-```bash
-# 1. Clone the repository
+1. Clone the repository
 git clone https://github.com/your-username/groq-multi-modal-chat.git
 cd groq-multi-modal-chat
-
-# 2. Install dependencies
+2. Install dependencies
 pip install -r requirements.txt
-
-# 3. Add your Groq API key
+3. Obtain a Groq API key from Groq Cloud Console
+4. Set up your API key in API.py
 echo "MyApi = 'your_api_key'" > API.py
-▶️ Usage
-Basic Text Chat
-bash
-Copy
-Edit
+
+
+### ▶️ Usage
+
+#### Basic Text Chat
 python groqchat.py
-Document-Aware Chat
-bash
-Copy
-Edit
-# Using PyMuPDF
+
+
+#### Document-Aware Chat
+Using PyMuPDF
 python mupdf.py
-
-# Using PyPDF2
+Using PyPDF2
 python pypdf.py
-
-# Using RAG (Retrieval-Augmented Generation)
+Using RAG (Retrieval-Augmented Generation)
 python rag.py
-FastAPI Server
-bash
-Copy
-Edit
-# Using pbfast.py
-uvicorn pbfast:app --reload --host 0.0.0.0 --port 4000
 
-# Using ragchat.py
+
+#### FastAPI Server
+Using pbfast.py
+uvicorn pbfast:app --reload --host 0.0.0.0 --port 4000
+Using ragchat.py
 uvicorn ragchat:app --reload --host 0.0.0.0 --port 8000
-Streamlit Interface
-bash
-Copy
-Edit
+
+
+#### Streamlit Interface
 streamlit run pcst2.py
-📚 User Guide
-Basic Text Chat
-Run the script:
 
-bash
-Copy
-Edit
+
+* * *
+
+## 📚 User Guide
+
+### Basic Text Chat
+
+1. Run the basic text chat script:
 python groqchat.py
-Type your queries in the console.
-Type exit, quit, close, or bye to end.
 
-Document-Aware Chat
-Place your PDF documents in the D:\Ahsan\Office\Data folder.
 
-Run any of the document-aware scripts:
+2. Type your queries in the console.
+3. Type 'exit', 'quit', 'close', or 'bye' to end the conversation.
 
-bash
-Copy
-Edit
+### Document-Aware Chat
+
+1. Place your PDF documents in the specified data folder (`D:\Ahsan\Office\Data`).
+2. Run the desired document chat script:
 python mupdf.py
 python pypdf.py
 python rag.py
-Ask questions related to your documents.
-Type exit, quit, close, or bye to end.
 
-FastAPI Integration
-Start the FastAPI server:
 
-bash
-Copy
-Edit
+3. Type your queries related to the documents.
+4. Type 'exit', 'quit', 'close', or 'bye' to end the conversation.
+
+### FastAPI Integration
+
+1. Start the FastAPI server:
 uvicorn pbfast:app --reload --host 0.0.0.0 --port 4000
-Send POST requests to:
 
-bash
-Copy
-Edit
-http://localhost:4000/ask
+
+2. Send POST requests to `http://localhost:4000/ask` with a JSON body containing your query.
+
 Example JSON body:
 
 json
-Copy
-Edit
 {
   "query": "What is the purpose of this application?"
 }
 Streamlit Interface
 bash
-Copy
-Edit
 streamlit run pcst2.py
 Use the web interface for interaction
 
@@ -158,7 +139,7 @@ Upload PDF documents for document-aware Q&A
 Navigate via: Home, Chat, Documents, Chat History
 
 🧪 Developer Notes
-Document loading via PyMuPDF, PyPDF2 ....
+Document loading via PyMuPDF, PyPDF2
 
 Text chunking for indexing
 
@@ -192,10 +173,9 @@ Groq API
 Llama Index
 
 PyMuPDF
-.....
-.....
-.....
-
+....
+....
+....
 PyPDF2
 
 FastAPI
