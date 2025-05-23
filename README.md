@@ -43,7 +43,7 @@ Groq Chat Application
 └── Configuration Management
 
 
-* * *
+
 
 ## 🎮 Getting Started
 
