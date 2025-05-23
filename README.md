@@ -1,7 +1,7 @@
 # 🤖 Groq Multi-Modal Chat Application
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-[![Built with Groq](https://img.shields.io/badge/built%20with-Groq-orange)](https://groq.ai/)
+[![Built with Groq](https://img.shields.io/badge/built%20with-Groq-orange)]([https://groq.ai/](https://console.groq.com/home))
 [![MIT License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 
 > A **versatile, intelligent conversational AI application** — powered by Groq API — supporting text-based conversations, document interactions, memory functionality for context management, and multiple implementation architectures.
