@@ -154,14 +154,14 @@ Logging and error handling
 Cross-platform compatibility
 
 * * *
----
 
-🩺 Troubleshooting
+
+# 🩺 Troubleshooting
 Issue	Solution
--❌ Invalid API key	Check and update API.py
--❌ Documents not loading	Ensure file paths are correct
--❌ No response from bot	Verify API key, rate limits, internet
--❌ App not starting	Check dependency installation
+❌ Invalid API key	Check and update API.py
+❌ Documents not loading	Ensure file paths are correct
+❌ No response from bot	Verify API key, rate limits, internet
+❌ App not starting	Check dependency installation
 
 ---
 
