@@ -153,6 +153,9 @@ Logging and error handling
 
 Cross-platform compatibility
 
+* * *
+---
+
 🩺 Troubleshooting
 Issue	Solution
 -❌ Invalid API key	Check and update API.py
